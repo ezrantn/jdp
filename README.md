@@ -70,4 +70,4 @@ To run the code examples in this repository, you need the following:
 If you'd like to contribute to this repository by adding more design patterns, improving code examples, or fixing issues, please open a pull request.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/umjiiii/design-patterns-oop/blob/main/LICENSE) file for details.
