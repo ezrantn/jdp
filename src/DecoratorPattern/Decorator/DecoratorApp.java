@@ -14,7 +14,7 @@ public class DecoratorApp {
         encoded.writeData(salaryRecords);
         DataSource plain = new FileDataSource("OutputDemo.txt");
 
-        System.out.println("- Input =================");
+        System.out.println("- Input ===================");
         System.out.println(salaryRecords);
         System.out.println("- Encoded ==================");
         System.out.println(plain.readData());

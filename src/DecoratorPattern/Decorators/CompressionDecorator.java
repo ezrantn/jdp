@@ -4,6 +4,7 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 import java.util.zip.Deflater;
 import java.util.zip.DeflaterOutputStream;
@@ -31,13 +32,12 @@ public class CompressionDecorator extends DataSourceDecorator {
     }
 
     private String compress(String stringData) {
-        byte[] data = stringData.getBytes();
+        byte[] data = stringData.getBytes(StandardCharsets.UTF_8);
         try {
             ByteArrayOutputStream bout = new ByteArrayOutputStream(512);
-            DeflaterOutputStream dos = new DeflaterOutputStream(bout, new Deflater(compLevel));
-            dos.write(data);
-            dos.close();
-            bout.close();
+            try (DeflaterOutputStream dos = new DeflaterOutputStream(bout, new Deflater(compLevel))) {
+                dos.write(data);
+            }
             return Base64.getEncoder().encodeToString(bout.toByteArray());
         } catch (IOException ex) {
             return null;
@@ -45,6 +45,7 @@ public class CompressionDecorator extends DataSourceDecorator {
     }
 
     private String decompress(String stringData) {
+        System.out.println("Input Base64 String: " + stringData); // for debugging
         byte[] data = Base64.getDecoder().decode(stringData);
         try {
             InputStream in = new ByteArrayInputStream(data);
@@ -57,7 +58,7 @@ public class CompressionDecorator extends DataSourceDecorator {
             in.close();
             iin.close();
             bout.close();
-            return new String(bout.toByteArray());
+            return new String(bout.toByteArray(), StandardCharsets.UTF_8);
         } catch (IOException ex) {
             return null;
         }
