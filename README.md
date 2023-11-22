@@ -7,6 +7,10 @@ This repository contains Java code examples for various design patterns implemen
 - Factory Pattern
 - Builder Pattern
 - Abstract Factory Pattern
+- Adapter Pattern
+- Facade Pattern
+- Decorator Pattern
+- Proxy Pattern
 
 Each design pattern is organized into its own folder within the `src/` directory for easy navigation and understanding.
 
