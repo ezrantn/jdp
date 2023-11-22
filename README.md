@@ -22,6 +22,10 @@ Each design pattern is organized into its own folder within the `src/` directory
   - [Factory Pattern](#factory-pattern)
   - [Builder Pattern](#builder-pattern)
   - [Abstract Factory Pattern](#abstract-factory-pattern)
+  - [Adapter Pattern](#adapter-pattern)
+  - [Facade Pattern](#facade-pattern)
+  - [Decorator Pattern](#decorator-pattern)
+  - [Proxy Pattern](#proxy-pattern)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Usage](#usage)
@@ -49,6 +53,22 @@ The Builder Pattern separates the construction of a complex object from its repr
 ### Abstract Factory Pattern
 
 The Abstract Factory Pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes. It is implemented in the `AbstractFactoryPattern` folder.
+
+### Adapter Pattern
+
+The Adapter Pattern allows the interface of an existing class to be used as another interface. It is implemented in the `Adapter` folder.
+
+### Facade Pattern
+
+The Facade Pattern provides a simplified, higher-level interface to a set of interfaces in a subsystem. It is implemented in the `Facade` folder.
+
+### Decorator Pattern
+
+The Decorator Pattern allows behavior to be added to an individual object, either statically or dynamically, without affecting the behavior of other objects from the same class. It is implemented in the `DecoratorPattern` folder.
+
+### Proxy Pattern
+
+The Proxy Pattern provides a surrogate or placeholder for another object to control access to it. It is implemented in the `ProxyPattern` folder.
 
 ## Getting Started
 
