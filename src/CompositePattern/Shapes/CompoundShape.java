@@ -10,7 +10,7 @@ public class CompoundShape extends BaseShape {
     protected List<Shape> children = new ArrayList<>();
     public CompoundShape(Shape... components) {
         super(0, 0, Color.BLACK);
-        add(component);
+        add(components);
     }
 
     public void add(Shape component) {
@@ -22,7 +22,7 @@ public class CompoundShape extends BaseShape {
     }
 
     public void remove(Shape child) {
-        child.remove(child);
+        children.remove(child);
     }
 
     public void remove(Shape... components) {

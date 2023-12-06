@@ -19,7 +19,7 @@ public class ImageEditor {
     public void loadShapes(Shape... shapes) {
         allShapes.clear();
         allShapes.add(shapes);
-        canvas.refresh;
+        canvas.refresh();
     }
 
     private class EditorCanvas extends Canvas {

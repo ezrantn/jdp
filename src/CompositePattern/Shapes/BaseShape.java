@@ -37,8 +37,8 @@ public class BaseShape implements Shape {
 
     @Override
     public boolean isInsideBounds(int x, int y) {
-        return x > getX() && (getY() + getWidth()) &&
-                y > getY() && y < (getY() + getHeight())
+        return x > getX() && x < (getX() + getWidth()) &&
+                y > getY() && y < (getY() + getHeight());
     }
 
     public void select() {
@@ -57,7 +57,7 @@ public class BaseShape implements Shape {
         graphics.setColor(Color.LIGHT_GRAY);
 
         Graphics2D g2 = (Graphics2D) graphics;
-        float[] dash1 = (2.0f);
+        float[] dash1 = new float[]{(2.0f)};
         g2.setStroke(new BasicStroke(1.0f,
                 BasicStroke.CAP_BUTT,
                 BasicStroke.JOIN_MITER,
