@@ -17,16 +17,16 @@ public class BridgeApp {
         System.out.println("Tests with basic remote");
         BasicRemote basicRemote = new BasicRemote(device);
         basicRemote.power();
-        basicRemote.volumeDown();
-        basicRemote.volumeDown();
+        basicRemote.volumeUp();
+        basicRemote.volumeUp();
         device.printStatus();
 
         System.out.println("Tests with advanced remote");
         AdvancedRemote advancedRemote = new AdvancedRemote(device);
         advancedRemote.power();
-        advancedRemote.volumeUp();
-        advancedRemote.channelUp();
         advancedRemote.mute();
+        advancedRemote.volumeUp();
+        advancedRemote.channelDown();
         device.printStatus();
     }
 }

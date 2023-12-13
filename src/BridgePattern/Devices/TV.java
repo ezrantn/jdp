@@ -2,8 +2,8 @@ package BridgePattern.Devices;
 
 public class TV implements Device {
     private boolean on = false;
-    private int volume = 30;
-    private int channel = 1;
+    private int volume = 40;
+    private int channel = 3;
 
     @Override
     public boolean isEnabled() {
@@ -27,12 +27,12 @@ public class TV implements Device {
 
     @Override
     public void setVolume(int percent) {
-        if (volume > 100) {
+        if (percent > 100) {
             this.volume = 100;
-        } else if (volume < 0) {
+        } else if (percent < 0) {
             this.volume = 0;
         } else {
-            this.volume = volume;
+            this.volume = percent;
         }
     }
 

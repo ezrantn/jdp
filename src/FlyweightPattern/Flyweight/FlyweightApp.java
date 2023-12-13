@@ -15,10 +15,11 @@ public class FlyweightApp {
         System.out.println(Math.floor(TREES_TO_DRAW / TREE_TYPE));
         for (int i = 0; i < Math.floor(TREES_TO_DRAW / TREE_TYPE); i++) {
             forrest.plantTree(random(0, CANVAS_SIZE), random(0, CANVAS_SIZE),
-            "Summer Oak", Color.GREEN, "Oak texture stub");
-
+                    "Summer Oak", Color.GREEN, "Oak Texture stub");
             forrest.plantTree(random(0, CANVAS_SIZE), random(0, CANVAS_SIZE),
-                    "Autumn Oak", Color.GREEN, "Autumun oak texture stub");
+                    "Autumn Oak", Color.RED, "Autumn Oak Texture stub");
+            forrest.plantTree(random(0, CANVAS_SIZE), random(0, CANVAS_SIZE),
+                    "Blue Oak", Color.BLUE,"Blue Oak Texture stub");
         }
         forrest.setSize(CANVAS_SIZE, CANVAS_SIZE);
         forrest.setVisible(true);
