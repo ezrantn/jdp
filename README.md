@@ -11,6 +11,19 @@ This repository contains Java code examples for various design patterns implemen
 - Facade Pattern
 - Decorator Pattern
 - Proxy Pattern
+- Bridge Pattern
+- Composite Pattern
+- Flyweight Pattern
+- Chain of Responsibility Pattern
+- Command Pattern
+- State Pattern
+- Strategy Pattern
+- Template Pattern
+- Iterator Pattern
+- Mediator Pattern
+- Memento Pattern
+- Observer Pattern
+- Visitor Pattern
 
 Each design pattern is organized into its own folder within the `src/` directory for easy navigation and understanding.
 
@@ -26,6 +39,19 @@ Each design pattern is organized into its own folder within the `src/` directory
   - [Facade Pattern](#facade-pattern)
   - [Decorator Pattern](#decorator-pattern)
   - [Proxy Pattern](#proxy-pattern)
+  - [Bridge Pattern](#bridge-pattern)
+  - [Composite Pattern](#composite-pattern)
+  - [Flyweight Pattern](#flyweight-pattern)
+  - [Chain of Responsibility Pattern](#chain-of-responsibility-pattern)
+  - [Command Pattern](#command-pattern)
+  - [State Pattern](#state-pattern)
+  - [Strategy Pattern](#strategy-pattern)
+  - [Template Pattern](#template-pattern)
+  - [Iterator Pattern](#iterator-pattern)
+  - [Mediator Pattern](#mediator-pattern)
+  - [Memento Pattern](#memento-pattern)
+  - [Observer Pattern](#observer-pattern)
+  - [Visitor Pattern](#visitor-pattern)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Usage](#usage)
@@ -69,6 +95,58 @@ The Decorator Pattern allows behavior to be added to an individual object, eithe
 ### Proxy Pattern
 
 The Proxy Pattern provides a surrogate or placeholder for another object to control access to it. It is implemented in the `ProxyPattern` folder.
+
+### Bridge Pattern 
+
+The Bridge Pattern decouples abstraction from implementation, allowing them to vary independently. It is implemented in the `BridgePattern` folder.
+
+### Composite Pattern
+
+The Composite Pattern composes objects into tree structures to represent part-whole hierarchies. It is implemented in the `CompositePattern` folder.
+
+### Flyweight Pattern
+
+The Flyweight Pattern minimizes memory usage or computational expenses by sharing as much as possible with related objects. It is implemented in the `FlyweightPattern` folder.
+
+### Chain of Responsibility Pattern
+
+Chain of Responsibility Pattern passes a request along a chain of handlers, each having the ability to process or pass it to the next handler. It is implemented in the `ChainOfResponsibilityPattern` folder.
+
+### Command Pattern
+
+Command Pattern encapsulates a request as an object, allowing parameterization of clients with different requests, queuing, and logging of requests. It is implemented in the `CommandPattern` folder.
+
+### State Pattern
+
+State Pattern alters an object's behavior when its internal state changes, allowing it to appear as if the object has changed its class. It is implemented in the `StatePattern` folder.
+
+### Strategy Pattern
+
+Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable, allowing the client to choose the appropriate one. It is implemented in the `StrategyPattern` folder.
+
+### Template Pattern
+
+Template Pattern defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure. It is implemented in the `TemplatePattern` folder.
+
+### Iterator Pattern
+
+Iterator Pattern provides a way to access elements of an aggregate object sequentially without exposing its underlying representation. It is implemented in the `IteratorPattern` folder.
+
+### Mediator Pattern
+
+Mediator Pattern defines an object that centralizes communication between other objects, promoting loose coupling. It is implemented in the `MediatorPattern` folder.
+
+### Memento Pattern
+
+Memento Pattern captures and externalizes an object's internal state so that it can be restored to this state later. It is implemented in the `MementoPattern` folder.
+
+### Observer Pattern
+
+Observer Pattern defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.  It is implemented in the `ObserverPattern` folder.
+
+### Visitor Pattern
+
+Visitor Pattern represents an operation to be performed on the elements of an object structure, allowing the definition of new operations without changing the classes of the elements. It is implemented in the `VisitorPattern` folder.
 
 ## Getting Started
 
