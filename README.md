@@ -84,7 +84,7 @@ To run the code examples in this repository, you need the following:
 1. Clone this repository to your local machine:
 
    ```shell
-   git clone https://github.com/thisdoraemon/design-patterns-oop.git
+   git clone https://github.com/thisdoraemon/design-patterns.git
    ```
 2. Navigate to the specific design pattern folder you want to explore, e.g., `SingletonPattern`.
 3. Open the project in your preferred Java IDE or code editor.
